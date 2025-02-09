@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leah Sigana - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav">
+        <div class="nav-content">
+            <a href="/" class="logo-link">
+                <div class="nav-logo" aria-label="Leah Sigana's Logo">LS</div>
+            </a>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="#about" title="Navigate to About">About</a>
+                <a href="#projects" title="Navigate to Projects">Projects</a>
+                <a href="resume.html" title="Navigate to Resume">Resume</a>
+                <a href="#getintouch" title="Navigate to Contact">
+                    <button class="contact-btn">Get In Touch</button></a>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div>
+            <div class="name">LEAH SIGANA</div>
+            <div class="title">DATA ANALYST & SOFTWARE DEVELOPER 2024</div>
+        </div>
+    </header>
+    <!-- Profile Image Hero Section -->
+    <div class="profile-hero">
+        <div class="profile-container">
+            <div class="profile-wrapper">
+                <img src="img/profile-image.jpg" alt="Profile" class="profile-img">
+                <div class="profile-backdrop"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1 class="hero-text">
+            <div class="line-wrap">
+                <div class="lines">HELLO! I'M LEAH, A DATA</div>
+            </div>
+            <div class="line-wrap">
+                <div class="lines">ANALYST AND SOFTWARE</div>
+            </div>
+            <div class="line-wrap">
+                <div class="lines">DEVELOPER PASSIONATE ABOUT</div>
+            </div>
+            <div class="line-wrap">
+                <div class="lines">DATA AND BUILDING</div>
+            </div>
+            <div class="line-wrap">
+                <div class="lines">SOLUTIONS</div>
+            </div>
+        </h1>
+    </div>
+    <div class="scroll-prompt" aria-hidden="true">
+        Scroll down
+        <div class="arrow"></div>
+    </div>
+    <!-- About Section -->
+    <div class="container">
+        <div class="header-container" id="about">
+            <div class="about">ABOUT</div>
+            <div class="line"></div>
+        </div>
+        <div class="about-text-container">
+            <h1 class="about-text">Whether building websites or crafting cutting-edge data-driven solutions, I thrive on creating meaningful digital experiences. My passion lies at the intersection of data, design, and innovation, offering tailored solutions to empower brands, businesses, and bold ideas.</h1>
+        </div>
+        <div class="content-grid">
+             <!-- Left Column -->
+             <div class="content-column">
+                <div class="section vision-section">
+                    <h2 class="section-title">MY VISION</h2>
+                    <p>I thrive on tackling complex challenges and crafting innovative solutions that drive real impact. With a strong focus on data-driven strategies and cutting-edge technology, I'm eager to collaborate on projects that push boundaries and shape the future. Let's work together to make it happen!</p>
+                </div>
+            </div>
+            <!-- Tools Column -->
+            <div class="content-column" id="content-skills">
+                <div class="section tools-section">
+                    <h2 class="section-title">TOOLS I LOVE WORKING WITH</h2>
+                    <ul class="tools-list">
+                        <li>Python <span class="tool-detail">for data analysis and visualization</span></li>
+                        <li>Django, HTML, CSS <span class="tool-detail">for web development</span></li>
+                        <li>Figma <span class="tool-detail">for prototyping and design</span></li>
+                        <li>WordPress <span class="tool-detail">for creative content blogging</span></li>
+                        <li>ChatGPT <span class="tool-detail">for AI-powered insights</span></li>
+                        <li>SQL & Excel <span class="tool-detail">for making data talk!</span></li>
+                        <li>Canva <span class="tool-detail">for visual storytelling</span></li>
+                        <li>Slack <span class="tool-detail">for seamless teamwork</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-button">Available For Work</div>
+    <section class="project-section" id="projects">
+        <div class="project-container" id="project1">
+            <div class="project-content">
+                <div class="project-header">
+                    <span class="project-tag">[01]</span>
+                    <h2 class="project-title">Stock Price Predictor</h2>
+                </div>
+                <div class="project-info">
+                    <p class="project-description">A machine learning-based stock price predictor analyzing historical Safaricom stock data to provide insights and future trend projections.</p>
+                    <div class="technologies">
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">yFinance</span>
+                    </div>
+                    <a href="https://github.com/lsigana/Safaricom_stock_price_predictor.git" class="project-link" target="_blank">
+                        View Project
+                        <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="img/dashboard.jpg" alt="Geospatial Analysis Web App" loading="lazy">
+            </div>
+        </div>
+        <div class="project-container" id="project2">
+            <div class="project-content">
+                <div class="project-header"> 
+                    <span class="project-tag">[02]</span>
+                    <h2 class="project-title">Geospatial Analysis Web App</h2>
+                </div>
+                <div class="project-info">
+                    <p class="project-description">
+                        A Flask-based interactive web application that visualizes Nairobi's road network, water points, hospitals, and schools using Leaflet.js and OpenStreetMap data. Features real-time routing, road-blocking, and optimized navigation.
+                    </p>
+                    <div class="technologies">
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Leaflet.js</span>
+                        <span class="tech-tag">OpenStreetMap</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <a href="https://github.com/lsigana/geospatial_project" class="project-link" target="_blank">
+                        View Project
+                        <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="img/geospatial_project.jpg" alt="Geospatial Analysis Web App" loading="lazy">
+            </div>
+        </div>
+        <div class="project-container" id="project3">
+            <div class="project-content">
+                <div class="project-header">
+                    <span class="project-tag">[03]</span>
+                    <h2 class="project-title">Eternal Records Vinyl Store</h2>
+                </div>
+                <div class="project-info">
+                    <p class="project-description">
+                        An eCommerce website for selling vinyl album records, featuring a modern UI, a seamless shopping experience, and secure payment integration.
+                    </p>
+                    <div class="technologies">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">eCommerce</span>
+                    </div>
+                    <a href="https://github.com/lsigana/Vinyl_record_store.git" class="project-link" target="_blank">
+                        View Project
+                        <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="img/vinyl_store.jpg" alt="Eternal Records Vinyl Store" loading="lazy">
+            </div>
+        </div>
+    </section>
+    <section class="profile-section" id="skills">
+        <h2 class="profile-title">Data Analyst with a Passion for Insightful Analytics</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3 class="skill-title">Foundational Skills</h3>
+                <p class="skill-description">
+                    Building proficiency in data analysis techniques using Python, SQL, and Excel. Focused on honing skills in data visualization, data cleaning, and storytelling through analytics to drive actionable insights.
+                </p>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-title">Curiosity-Driven Problem Solver</h3>
+                <p class="skill-description">
+                    Enthusiastic about tackling real-world challenges by applying data-driven approaches to deliver impactful solutions. Dedicated to continuous learning to master the latest technologies and methodologies.
+                </p>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-title">Tech Enthusiast</h3>
+                <p class="skill-description">
+                    Passionate about exploring technological tools and applying them creatively to enhance data understanding. Current focus includes Python libraries (Pandas, NumPy, Matplotlib) and exploring business intelligence tools like Power BI and Tableau.
+                </p>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-title">Collaborative Thinker</h3>
+                <p class="skill-description">
+                    Strong communication skills with a demonstrated ability to collaborate in team projects, adapt to fast-paced environments, and continuously grow through constructive feedback and mentorship.
+                </p>
+            </div>
+        </div>
+        <a href="resume.html" class="resume-button">View Full Resume →</a>
+    </section>
+    <!-- Updated Icebreakers Section -->
+    <section class="icebreakers-section">
+        <h3 class="section-title">Let's Break The Ice! 👋</h3>
+        <div class="icebreaker-content">
+            <p>
+                When I'm not diving into data or crafting code, you'll find me exploring the creative universe! 🎨 I bring the same analytical mindset to my digital illustrations as I do to data visualization - it's all about telling compelling stories through visual patterns.
+            </p>
+            <p>
+                Currently reading: "Three Body Problem" by Liu Cixin 📚<br>
+                Latest crochet project: A data-inspired wall hanging combining fibonacci sequences with traditional patterns 🧶<br>
+                Recent tech discovery: Building interactive dashboards with R Shiny ✨
+            </p>
+            <div class="social-links">
+                <a href="https://leahslensdatadreamsanddiscovery.wordpress.com/" class="social-link" target="_blank">
+                    Read my latest blog posts →
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="collaboration">
+        <p>Got a question, proposal or project?</p>
+        <p>Let's collaborate on something amazing.</p>
+        <p>Feel free to reach out.</p>
+    </div>
+
+    <div class="mega-text">
+        LET'S COLLABORATE
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://instagram.com/yourusername" aria-label="Instagram">
+                        <svg class="social-icon" viewBox="0 0 24 24"><!-- Instagram icon path --></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/leah-sigana-056b92183/" aria-label="LinkedIn">
+                        <svg class="social-icon" viewBox="0 0 24 24"><!-- LinkedIn icon path --></svg>
+                    </a>
+                    <a href="https://github.com/YourGithubUsername" aria-label="GitHub">
+                        <svg class="social-icon" viewBox="0 0 24 24"><!-- GitHub icon path --></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#content-skills">Skills</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" id="getintouch">
+                <h4>Contact</h4>
+                <p>leahsigana47@gmail.com</p>
+                <p>Available for freelance projects</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Leah Sigana. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>   
+</body>
+</html>
+
+
+
