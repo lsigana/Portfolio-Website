@@ -10,7 +10,7 @@ gsap.timeline({
 })
 .fromTo(".lines", 
     { x: "100%", opacity: 0 },  // Starting state
-    { x: "0%", opacity: 1, duration: 1, ease: "power3.out", stagger: 0.15 }
+    { x: "0%", opacity: 1, duration: 2, ease: "power3.out", stagger: 0.15 }
 );
 // Scroll reveal for sections
 const revealElements = document.querySelectorAll('.section, .skills-grid, .profile-img');

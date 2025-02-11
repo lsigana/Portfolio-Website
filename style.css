@@ -114,24 +114,29 @@ body {
     font-size: 0.9rem;
     opacity: 0.7;
 }
+
 /* Profile Hero Section */
 .profile-hero {
     height: 60vh;
-    background: linear-gradient(135deg, var(--mint-green), var(--light-green));
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     position: relative;
+    float: left;
+    z-index: 1;
 }
 .profile-container {
     position: relative;
     z-index: 2;
+    width: 100%;
+    padding: 1rem;
 }
 .profile-wrapper {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 100%;        /* Changed to be responsive to container */
+    aspect-ratio: 1/1;  
     margin: 0 auto;
     animation: floatAnimation 6s ease-in-out infinite;
 }
@@ -151,7 +156,7 @@ body {
     left: -10px;
     right: -10px;
     bottom: -10px;
-    background: linear-gradient(45deg, var(--primary-green), var(--accent-green));
+    background: none;
     border-radius: 50%;
     filter: blur(15px);
     opacity: 0.5;
@@ -160,23 +165,24 @@ body {
 }
 /* Hero Section */
 .hero {
-    min-height: 50vh;
+    width: 80%;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
+    padding: 2rem 4rem;
     position: relative;
-    margin-top: 3rem;
+    right: 0;
+    top: 0;
     overflow: hidden;
 }
 .hero-text {
-    font-size: clamp(1rem, 9vw, 4rem);
-    font-weight: 1600;
-    text-align: center;
-    line-height: 1.1;
+    font-size: clamp(2rem, 4.5vw, 4.5rem);
+    font-weight: 800;
+    text-align: right;
+    line-height: 1.2;
     margin-bottom: 4rem;
-    max-width: 1200px;
+    max-width: 800px;
     z-index: 1;
     color: var(--dark-green);
 }
@@ -700,6 +706,20 @@ body {
     .profile-wrapper {
         width: 250px;
         height: 250px;
+    }
+    .profile-hero, .hero {
+        width: 100%;
+        position: relative;
+        height: auto;
+        min-height: 50vh;
+    }
+    .hero-text {
+        font-size: clamp(1.5rem, 7vw, 3.5rem);
+        text-align: center;
+    }
+    .hero {
+        align-items: center;
+        padding: 2rem;
     }
 }
 @media (max-width: 768px) {
