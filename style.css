@@ -344,6 +344,43 @@ body {
     flex-direction: column;
     gap: 4rem;
 }
+.category-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+.category-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.project-section .category-title {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.project-section .category-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #666, #999, #666);
+}
+.category-description {
+    font-size: 1.125rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
 .project-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -398,6 +435,7 @@ body {
     border-radius: 20px;
     font-size: 0.9rem;
     color: #999;
+    transition: all 0.3s ease;
 }
 .project-link {
     display: inline-flex;
@@ -430,6 +468,19 @@ body {
     object-fit: cover;
     border-radius: 5px;
 }
+/* Category-specific styling */
+.project-section .hackathon .category-title::after {
+    background: linear-gradient(90deg, #ff6b6b, #ff8e8e, #ff6b6b);
+}
+.excel .category-title::after {
+    background: linear-gradient(90deg, #4caf50, #66bb6a, #4caf50);
+}
+.data-analytics .category-title::after {
+    background: linear-gradient(90deg, #2196f3, #42a5f5, #2196f3);
+}
+.creative .category-title::after {
+    background: linear-gradient(90deg, #9c27b0, #ba68c8, #9c27b0);
+}
 @media (max-width: 1024px) {
     .project-container {
         grid-template-columns: 1fr;
@@ -438,6 +489,9 @@ body {
 
     .project-title {
         font-size: 3.5rem;
+    }
+    .project-section .category-title {
+        font-size: 2.5rem;
     }
 }
 @media (max-width: 768px) {
@@ -451,6 +505,12 @@ body {
         font-size: 2.5rem;
     }
     .project-description {
+        font-size: 1rem;
+    }
+    .project-section .category-title {
+        font-size: 2rem;
+    }
+    .category-description {
         font-size: 1rem;
     }
 }

@@ -43,7 +43,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
-});
+}); 
 // Initialize GSAP
 gsap.registerPlugin(ScrollTrigger);
 
